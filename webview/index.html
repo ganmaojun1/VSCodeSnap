@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <!-- <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'none'; img-src %CSP_SOURCE% data: https:; script-src %CSP_SOURCE%; style-src 'unsafe-inline' %CSP_SOURCE%;"
+    /> -->
+  <title>VSCodeSnap 📸</title>
+  <link rel="stylesheet" href="./style.css" />
+  <script src="../node_modules/dom-to-image-even-more/dist/dom-to-image-more.min.js" async></script>
+  <script src="./src/index.js" type="module"></script>
+</head>
+
+<body>
+  <div id="top-bar">
+    <button id="button-save">Save</button>
+    <button id="button-copy">Copy</button>
+
+    <label class="label text-medium-small left">Preview zoom:</label>
+    <input id="slider-zoom" type="range" min="0" max="100" value="75"></div>
+  </div>
+
+  <div id="snippet-scroll">
+    <div id="snippet-container">
+      <div id="window">
+        <div id="navbar">
+          <div id="window-controls">
+            <svg width="58" height="14" viewBox="0 0 58 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 7H11" stroke="#878787" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path
+                d="M35 1H25C24.4477 1 24 1.44772 24 2V12C24 12.5523 24.4477 13 25 13H35C35.5523 13 36 12.5523 36 12V2C36 1.44772 35.5523 1 35 1Z"
+                stroke="#878787"></path>
+              <path d="M47 2L57 12" stroke="#878787" stroke-linecap="round" stroke-linejoin="round"></path>
+              <path d="M47 12L57 2" stroke="#878787" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </div>
+
+          <div id="mac-controls">
+            <div id="red-dot" class="red dot"></div>
+            <div id="red-dot" class="yellow dot"></div>
+            <div id="red-dot" class="green dot"></div>
+          </div>
+
+          <div id="window-title"></div>
+        </div>
+
+        <div id="snippet"></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="flash-fx"></div>
+
+  <div id="console-log"></div>
+</body>
+
+</html>
