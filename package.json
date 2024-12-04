@@ -5,9 +5,9 @@
   "version": "1.5.1",
   "repository": {
     "type": "git",
-    "url": "https://github.com/luisllamasbinaburo/VSCodeSnap"
+    "url": "https://github.com/ganmaojun1/vscodesnap"
   },
-  "publisher": "luisllamas",
+  "publisher": "GavinMo",
   "icon": "icon.png",
   "license": "GPL3",
   "engines": {
@@ -26,9 +26,6 @@
   ],
   "categories": [
     "Other"
-  ],
-  "activationEvents": [
-    "onCommand:vscodesnap.start"
   ],
   "main": "./src/extension.js",
   "contributes": {
