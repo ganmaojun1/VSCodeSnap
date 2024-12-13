@@ -1,6 +1,6 @@
 {
-  "name": "vscodesnap",
-  "displayName": "VSCodeSnap",
+  "name": "vscode-snap",
+  "displayName": "vscode-snap",
   "description": "📷 Take beautiful screenshots of your code",
   "version": "1.5.1",
   "repository": {
@@ -28,6 +28,9 @@
     "Other"
   ],
   "main": "./src/extension.js",
+  "activationEvents": [
+    "onCommand:vscodesnap.start"
+  ],
   "contributes": {
     "commands": [
       {
